@@ -10,7 +10,7 @@ echo '{
 curl -X POST \
   -H "Content-Type: application/json" \
   -d @multi-nl-request.json \
-  "https://language.googleapis.com/v1/documents:analyzeSyntax?key=AIzaSyAe4JawjNaO-v8mbyR77V3EV5Ed-HG2ZlI" > multi-response.txt
+  "https://language.googleapis.com/v1/documents:analyzeSyntax?key=<API KEY>" > multi-response.txt
 
 
 gcloud ml language analyze-entities --content="Le bureau japonais de Google est situé à Roppongi Hills, Tokyo." > multi-response.txt
